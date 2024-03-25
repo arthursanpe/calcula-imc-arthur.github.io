@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+    <title>Document</title>
+</head>
+<body style="">
+    <header>
+        <h3>Calcule o IMC</h3>
+    </header>
+
+    <main class="container d-flex flex-column justify-content-center vh-75 mt-3" >
+        <div class="box-search d-flex justify-content-center gap-1">
+            <label class="input-group-text d-flex align-items-center text-center" for="peso">Peso:</label>
+            <input id="peso" class="form-control w-25" type="text" placeholder="(kg)">
+        </div>
+        <div class="box-search d-flex justify-content-center mt-2">
+            <label class="input-group-text d-flex align-items-center" for="altura">Altura: </label>
+            <input id="altura" class="form-control w-25" type="text" placeholder="(m)">
+        </div>
+        <br>
+        <div class="box-search d-flex justify-content-center mt-2">
+            <button id="calcularBtn" class="btn btn-success" >Calcular</button>
+        </div>
+        <br>
+        <div class="card mx-auto mt-2" style="text-align:center; width: 20rem;">
+            <div class="card-header">Resultado</div>
+            <div class="card-body">
+                <p class="card-title">Seu IMC é:<strong class="input-group-text align-items-center" id="imc"></strong></p>
+                <p class="card-title">Classificação:<strong class="input-group-text align-items-center" id="classificacao"></strong></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Calculadora de IMC &copy; 2024</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="mask.js"></script>
+</body>
+</html>
