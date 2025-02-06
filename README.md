@@ -9,4 +9,4 @@ Criei esse projetinho simples para calcular IMC com o intuito de ajudar uma amig
 ![img](https://github.com/arthursanpe/calcula-imc-arthur.github.io/assets/108770753/59776a2c-dbbb-4efd-b81f-f8d8ebadadb3)
 
 ## Acesso
-Acesse o projeto aqui 👉[ Calculadora IMC](https://arthursanpe.github.io/calcula-imc-arthur.github.io/)
+Acesse o projeto aqui 👉[ Calculadora IMC]([https://arthursanpe.github.io/calcula-imc-arthur.github.io/](https://imc-calculator-app.netlify.app/))
