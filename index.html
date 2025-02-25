@@ -9,35 +9,45 @@
     <title>Document</title>
 </head>
 <body style="">
-    <header>
-        <h3>Calcule o IMC</h3>
+      <header>
+        <h1>Calculadora de IMC</h1>
+        <p>Calcule seu Índice de Massa Corporal</p>
     </header>
 
-    <main class="container d-flex flex-column justify-content-center vh-75 mt-3" >
-        <div class="box-search d-flex justify-content-center gap-1">
-            <label class="input-group-text d-flex align-items-center text-center" for="peso">Peso:</label>
-            <input id="peso" class="form-control w-25" type="text" placeholder="(kg)">
+    <main>
+        <div class="calculator-card">
+            <div class="input-group">
+                <label for="peso">Peso</label>
+                <input id="peso" type="text" placeholder="Ex: 70.5">
+                <i class="icon fas fa-weight"></i>
+            </div>
+            
+            <div class="input-group">
+                <label for="altura">Altura</label>
+                <input id="altura" type="text" placeholder="Ex: 1.75">
+                <i class="icon fas fa-ruler-vertical"></i>
+            </div>
+            
+            <button id="calcularBtn">
+                <i class="fas fa-calculator"></i> Calcular IMC
+            </button>
         </div>
-        <div class="box-search d-flex justify-content-center mt-2">
-            <label class="input-group-text d-flex align-items-center" for="altura">Altura: </label>
-            <input id="altura" class="form-control w-25" type="text" placeholder="(m)">
-        </div>
-        <br>
-        <div class="box-search d-flex justify-content-center mt-2">
-            <button id="calcularBtn" class="btn btn-success" >Calcular</button>
-        </div>
-        <br>
-        <div class="card mx-auto mt-2" style="text-align:center; width: 20rem;">
-            <div class="card-header">Resultado</div>
-            <div class="card-body">
-                <p class="card-title">Seu IMC é:<strong class="input-group-text align-items-center" id="imc"></strong></p>
-                <p class="card-title">Classificação:<strong class="input-group-text align-items-center" id="classificacao"></strong></p>
+
+        <div class="result-card" id="resultCard">
+            <h3>Seu Resultado</h3>
+            <div class="result-item">
+                <p>Seu IMC é:</p>
+                <div class="value" id="imc">--</div>
+            </div>
+            <div class="result-item">
+                <p>Classificação:</p>
+                <div class="classification" id="classificacao">--</div>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>Calculadora de IMC &copy; 2024</p>
+        <p>Calculadora de IMC &copy; 2024 | Desenvolvido com ❤️</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
